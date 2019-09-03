@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://itp.erikvanzummeren.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'ITP blog',
+  subtitle: 'Erik van Zummeren, creative technologist and ITP student 19-21',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
@@ -25,19 +25,19 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Erik van Zummeren',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'I am a Dutch creative technogologist that is currently attending the Interactive Telecommunications Program',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'erikvanzummeren@gmail.com',
+      facebook: 'https://www.facebook.com/erik.vanzummeren.3',
+      telegram: '',
+      twitter: '',
+      github: 'https://github.com/evanzummeren',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'https://www.linkedin.com/in/erik-van-zummeren-68834683/',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: ''
