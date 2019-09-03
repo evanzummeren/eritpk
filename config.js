@@ -27,7 +27,7 @@ module.exports = {
   author: {
     name: 'Erik van Zummeren',
     photo: '/photo.jpg',
-    bio: 'I am a Dutch creative technogologist that is currently attending the Interactive Telecommunications Program',
+    bio: 'I am a Dutch creative technologist, that is currently attending the Interative Telecommunications Program at NYU TSOA. I am mostly interested in creating tools for a stronger civil society and new forms of digital storytelling.',
     contacts: {
       email: 'erikvanzummeren@gmail.com',
       facebook: 'https://www.facebook.com/erik.vanzummeren.3',
