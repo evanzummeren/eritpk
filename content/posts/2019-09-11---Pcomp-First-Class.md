@@ -1,6 +1,6 @@
 ---
 title: Pcomp - First class
-date: "019-09-11T18:14:14Z"
+date: "2019-09-11T20:07:42+00:00"
 template: "post"
 draft: false
 slug: "/posts/pcomp-first-class"
