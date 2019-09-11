@@ -46,6 +46,8 @@ A couple of weeks ago I was reading a blog post by [Dominic Cummings](https://en
 
 In a lengthy [blog post](https://dominiccummings.com/2019/06/26/on-the-referendum-33-high-performance-government-cognitive-technologies-michael-nielsen-bret-victor-seeing-rooms/) Cummings describes how much of our current decision making in politics haven't changed that much. He takes a great deal of his inspiration from Bret Victor and Michael Nielsen. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zBzxyUkKo_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 To be honest, I think the ultimate goal people such as Cummings or Jacob Rees-Mogg is to make the government as small as possible. I might be a bit too pessimistic in this, but for me Brexit has always felt as a way to turn the government into a libertarian 
 
 The interface Cummings is proposing feels to me like a tools to do so. It's in essence a very quantitative, McNamara, approach to politics.
