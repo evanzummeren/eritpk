@@ -1,33 +1,22 @@
 ---
-title: Work Journey [WIP]
+title: Design Research: Work Journey [WIP]
 date: "2019-09-07T18:14:14Z"
 template: "post"
 draft: false
 slug: "/posts/work-journey"
 category: "Design Research"
-description: "Figuring out my work journey."
+description: "If there is one question I dislike answering, then it's the question: What do you do? Working mostly as interaction designer and programmer, with an academic background in History and Journalism, it's often difficult to provide a clear answer. Calling myself a creative technologist does not make it much better."
 socialImage: "/media/image-3.jpg"
 ---
 
-**Pellentesque habitant morbi tristique** senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. *Aenean ultricies mi vitae est.* Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. 
-
-Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.  [Donec non enim](#) in turpis pulvinar facilisis.
-
-![Nulla faucibus vestibulum eros in tempus. Vestibulum tempor imperdiet velit nec dapibus](/media/image-3.jpg)
-
 ## What do you do?
 
-Ever since I came to the United States I often have similar conversations. What's your name? Where do you come from? What do you do? Of course I often had these conversations back in the Netherlands, but moving to a new place where I barely know a soul increased these conversations by a tenfold.
+If there is one question I dislike answering, then it's the question: What do you do? Working mostly as interaction designer and programmer, with an academic background in History and Journalism, it's often difficult to provide a clear answer. Calling myself a creative technologist does not make it much better.
 
-The 'What do you do' is the one I hate the most. Partially because I wear so many hats that no answer feels very satisfying. It would be much easier to reply: 'I am a doctor' or 'I work as a lawyer'.
-
-However the 'What do you do' also defines people. The work we do is a large, maybe even the most important part, of the identity that we carry. If you are unhappy with the office job that you currently have, you try aspire something bigger.
-
-In the film Serpico (1973) this is nicely visible. Serpico (Al Pacino) vists a party where he is introduced to a couple of people. All the people Serpico is introduced too are actually doing a work
-
-In that sense it was also an important part of the class discussions that we had. Many people felt that they were stuck in jobs and they aspired to do something that has more value.
+I feel that doctors and lawyers are in that sense rather lucky. The narratives they tell at parties are – although a little boring – clear and compelling. Not just in words, but also visually. I think the jobs that we aspire to do when we are children have a very similar quality. 
 
 ## The work journey
+
 For the work journey I have been exploring a couple of different concepts (see notes for sketches). What I eventually found the most intr
 
 I am curious towards the visual culture that are associated with these jobs. The ones we dream about as a kid are probably the ones that are visually quite intrueging. While the jobs we have difficulties explaining in words, are possibly also difficult to explain to images.
@@ -41,6 +30,16 @@ I want to create a video that shows the visual culture that are associated with 
 To do that I will do an automated Google Image search on the profession plus the year the person (e.g. fireman + 1995) was dreaming or actually doing this. I wrote a small script to make this a little easier. 
 
 To make the emotions and actions of the people visible I want to record a small interview with both myself and the others and lay these on top of key moments.
+
+### Work journey Katie
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wSQQpZftSm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### My own work journey
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pb0wHi-8hYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wSQQpZftSm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Step 1: Interviewing and filling in a spreadsheet
 I tried to break up work/career journey is a couple of categories/questions to cover the entire:
@@ -58,12 +57,43 @@ I will use Google Puppeteer for this.
 ## Some discussions topics for the upcoming class
 
 
-```css
-#header h1 a {
-  display: block;
-  width: 300px;
-  height: 80px;
+```javascript
+"use strict";
+
+const puppeteer = require('puppeteer');
+
+module.exports = function(name, profession, year) {
+
+  (async () => {
+    const browser = await puppeteer.launch({
+      headless: true,
+      slowMo: 100
+    });
+    const page = await browser.newPage();
+    await page.setViewport({
+      width: 1920,
+      height: 1080,
+      deviceScaleFactor: 1,
+    });
+
+    const query = profession + '+' + year;
+    await page.goto('https://www.google.com/search?q=' + query + '&sxsrf=ACYBGNSF8lP91SmxWUEmHhfu1E6nbKPUcQ:1567961726122&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiovtPN2MHkAhWDbVAKHaABBrQQ_AUIEigB&biw=1680&bih=888');
+    await page.keyboard.press('ArrowRight');
+
+    for(var i = 0; i < 40; i++){
+      await page.keyboard.down('Enter');
+      await page.keyboard.press('ArrowRight');
+      await page.screenshot({path: './screenshots/' + name + '/' + year + '_' + profession + '_' + i + '.png'}).catch(err => {console.log(err)});
+    }
+
+    await browser.close();
+  })();
+
 }
+```
+
+```javascript 
+ffmpeg -framerate 1 -pattern_type glob -i '*.png' video_file.mp4
 ```
 
 ## Notes
