@@ -1,5 +1,5 @@
 ---
-title: Design Research: Work Journey [WIP]
+title: Design Research - Work Journey [WIP]
 date: "2019-09-07T18:14:14Z"
 template: "post"
 draft: false
