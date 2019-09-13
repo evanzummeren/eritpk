@@ -31,6 +31,8 @@ As usually I underestimated how much time this would cost, so I didn't have the 
 
 ### Work journey Katie
 
+(There are some issues with the code which sometimes captures the same frame multiple times, therefor the timing seems to be off at times)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wSQQpZftSm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### My own work journey
