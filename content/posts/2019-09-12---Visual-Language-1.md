@@ -8,12 +8,13 @@ category: "Visual Language"
 tags:
   - "Notes"
   - "Semester 1"
-description: "This post describes the first week of phyisical computation, it contains a mindmap containing different types of concepts related to electricity, a recap on two interaction design texts and a reflection of how some of the new populistic movements are inspired by forms of physical computation."
+description: "First class of visual language"
 socialImage: "/media/image-3.jpg"
 ---
 
-**This post describes the first week of phyisical computation,** it contains a mindmap containing different types of concepts related to electricity, a recap on two interaction design texts and a reflection of how some of the new populistic movements are inspired by forms of physical computation.
+# First class visual language
 
+## The grid system
 ![Original and grid](/media/visual_language/original_and_grid.png)
 
 ![Animation of the grid](/media/visual_language/gridbewegend.gif)
