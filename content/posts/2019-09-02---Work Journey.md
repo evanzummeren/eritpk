@@ -17,19 +17,17 @@ I feel that doctors and lawyers are in that sense rather lucky. The narratives t
 
 ## The work journey
 
-For the work journey I have been exploring a couple of different concepts (see notes for sketches). What I eventually found the most intr
-
-I am curious towards the visual culture that are associated with these jobs. The ones we dream about as a kid are probably the ones that are visually quite intrueging. While the jobs we have difficulties explaining in words, are possibly also difficult to explain to images.
+For my work journey I am curious towards the visual culture that are associated with these jobs. The ones we dream about as a kid are probably the ones that are visually quite intrueging. While the jobs that are difficult to explain in words, are possibly also difficult to explain to images.
 
 However, time is also an important part of the visuals. Just like the country someone is coming from. For instance an astronaut in the 60's (moon landing) has a different visual culture than one in the 80's (space shuttle). Just like a kosmonaut (a Russian astronaut) has very different visuals.
 
-In a sense is that what we aspire to become, a storytelling trap that we fell into? The things that we aspire are the ones that might contain clear narratives and visuals.
+For the work journey I created a video that shows the Google Images results for the work that we did or wanted to do in a specific year. For instance, if I wanted to become a policeman in 1995, I used the search query 'police man + 1995', or in a Dutch version: 'Politieagent + 1995')
 
-## Creating the work journey
-I want to create a video that shows the visual culture that are associated with the jobs that we do and that we aspire to become.
-To do that I will do an automated Google Image search on the profession plus the year the person (e.g. fireman + 1995) was dreaming or actually doing this. I wrote a small script to make this a little easier. 
+To do this I made a spreadsheet that has a year and work column. I then exported it as a csv and wrote a node.js script (primarily using the puppeteer library) to do a for-loop based on the csv data. For every year the script 'navigated' through 40 different thumbnails and made a png screenshot of every view. I then stitched all these images together with ffmpeg. The next step was to import this in Adobe Premiere, change the FPS and do some final editing.
 
-To make the emotions and actions of the people visible I want to record a small interview with both myself and the others and lay these on top of key moments.
+I made two videos, one of myself and one of my friend Katie. I did a seperate interview with Katie and put the audio tracks on top of her video. To add some extra drama I also put a soundtrack underneath it.
+
+As usually I underestimated how much time this would cost, so I didn't have the time to put my own thoughts on my own video. Therefor I start with Katie her video, which is much more refined than mine.
 
 ### Work journey Katie
 
@@ -39,24 +37,12 @@ To make the emotions and actions of the people visible I want to record a small 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Pb0wHi-8hYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wSQQpZftSm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Technical stuff
 
-### Step 1: Interviewing and filling in a spreadsheet
-I tried to break up work/career journey is a couple of categories/questions to cover the entire:
+Still a bit of a mess...
+[Github repo](https://github.com/evanzummeren/designresearch-week2)
 
-* What did you want to become? [dreams]
-* What did you do? [reality]
-* What do you do? [reality]
-* What do you want to do? [dreams]
-
-### Step 2: Writing a script to perform the Google Image search
-I will use Google Puppeteer for this.
-
-### Step 3: Importing this stuff in After Effects
-
-## Some discussions topics for the upcoming class
-
-
+**Grab.js**
 ```javascript
 "use strict";
 
@@ -91,16 +77,77 @@ module.exports = function(name, profession, year) {
 
 }
 ```
+```javascript
+#!/usr/bin env node
+
+"use strict";
+
+const grab = require("./grab.js");
+const csv = require('csvtojson');
+const fs = require('fs');
+const path = require('path');
+
+var args = require("minimist")(process.argv.slice(2), {
+    boolean: ['help'],
+    string: ['file']
+});
+
+if (args.help) {
+    printHelp();
+} else if (args.file) {
+    let filepath = path.resolve(args.file);
+    processFile(filepath);
+} else {
+    error("Incorrect usage", true)
+}
+
+// ***************
+function error(msg, includeHelp = false) {
+    console.log(msg)
+    if (includeHelp) {
+        console.log('');
+        printHelp();
+    }
+}
+
+function printHelp() {
+    console.log('index usage:');
+    console.log('   index --help');
+    console.log('');
+    console.log('   --help                         print this help');
+    console.log('   --file                         specify the file (csv)');
+    console.log('');
+}
+
+function processFile(filepath) {
+
+    fs.readFile(filepath, function onContents(err, contents){
+        if (err) {
+            error(err.toString());
+        } else {
+            processCsv(filepath);
+        }
+    })
+}
+
+function processCsv(filepath) {
+    csv()
+    .fromFile(filepath)
+    .then((jsonObj)=>{
+        jsonObj.forEach(function (careerYear, i) {
+            setTimeout(function(){
+                grab(careerYear.name, careerYear.profession, careerYear.year);
+                // console.log(el);
+            }, 60000 * (i + 1));
+        });
+    })
+}
+```
 
 ```javascript 
 ffmpeg -framerate 1 -pattern_type glob -i '*.png' video_file.mp4
 ```
 
-## Notes
-
-Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
-
 ## Credits
 [Piano Ticker](https://freesound.org/people/Jeanet_Henning/sounds/328910/) by [Jeanet Henning](https://freesound.org/people/Jeanet_Henning/), used under a Creative Commons license.
-
-![Test SVG](/media/cpu.svg)
+Google Puppeteer
