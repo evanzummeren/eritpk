@@ -1,5 +1,5 @@
 ---
-title: Pcomp - First class
+title: Pcomp [w1] - Some notes
 date: "2019-09-11T20:07:42+00:00"
 template: "post"
 draft: false
@@ -45,17 +45,3 @@ According to Victor a tool addresses the human needs by amplifying human capabil
 In all the other interfaces an interaction with a real 3d object is much more desirable. Interaction with a 3d object truly uses all the capabilities of the human body.
 
 The interaction we have with real physical objects eventually come down to four fundamental grips: A power grip (fingers vs palm), a precision grip (fingers vs thumb), a hook grip (between phalanges) and a scissor grip (between fingers)
-
-## The Brexit guy and physical computation for political decision-making [WIP]
-
-A couple of weeks ago I was reading a blog post by [Dominic Cummings](https://en.wikipedia.org/wiki/Dominic_Cummings), who was the campaign director behind the Brexit campaign and a confidant to current British PM Boris Johnson. 
-
-In a lengthy [blog post](https://dominiccummings.com/2019/06/26/on-the-referendum-33-high-performance-government-cognitive-technologies-michael-nielsen-bret-victor-seeing-rooms/) Cummings describes how much of our current decision making in politics haven't changed that much. He takes a great deal of his inspiration from Bret Victor and Michael Nielsen. 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zBzxyUkKo_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-To be honest, I think the ultimate goal people such as Cummings or Jacob Rees-Mogg is to make the government as small as possible. I might be a bit too pessimistic in this, but for me Brexit has always felt as a way to turn the government into a libertarian 
-
-The interface Cummings is proposing feels to me like a tools to do so. It's in essence a very quantitative, McNamara, approach to politics.
-
-I think people as Cummings and Steve Bannon have done the world  more harm than good. But one thing I do find fascinating about them for is their understanding of the zeitgeist, or at least their willingness to understand them. I can't imagine any labour or christian
