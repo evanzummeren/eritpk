@@ -1,6 +1,6 @@
 ---
 title: Pcomp [W2] - Working on the switch
-date: "2019-09-11T20:07:42+00:00"
+date: "2019-09-19T20:07:42+00:00"
 template: "post"
 draft: false
 slug: "/posts/pcomp-second-class"
