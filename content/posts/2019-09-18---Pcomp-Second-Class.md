@@ -16,7 +16,17 @@ After the first week was more or less an introduction, this week we got much mor
 
 ## Initial testing
 
-I also found out about some stuff that didn't work. 
+I initially started by following the syllabus. Instead of powering the circuit with an Arduino I used an external power source with adjustable voltage to power the circuit.  Thanks to the help of my classmate Helen I managed to get everything up and running quite easily.
+
+![Pushing the button](/media/pcomp/button.gif)
+
+Once I finished using the normal switch, I started thinking of more creative ways to make a buttton. Here are two tests that didn't work. The foam ensures that the current in the stripped wire doesn't conduct. In the other example I was thinking of an plier, but because the metal in the plier already conducts, there was an constant current. 
+
+![Foam](/media/pcomp/notworking1.png)
+![Plier](/media/pcomp/notworking2.png)
+
+
+Eventually I came up with something simple using two straw rubbers. It gave me the idea to create a drum (see next paragraph for the final prototype).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9JM5PmyvSAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
