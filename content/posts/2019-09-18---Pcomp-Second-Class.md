@@ -22,8 +22,8 @@ I initially started by following the syllabus. Instead of powering the circuit w
 
 Once I finished using the normal switch, I started thinking of more creative ways to make a buttton. Here are two tests that didn't work. The foam ensures that the current in the stripped wire doesn't conduct. In the other example I was thinking of an plier, but because the metal in the plier already conducts, there was an constant current. 
 
-![Foam](/media/pcomp/notworking1.png)
-![Plier](/media/pcomp/notworking2.png)
+![Foam](/media/pcomp/notworking1.jpg)
+![Plier](/media/pcomp/notworking2.jpg)
 
 
 Eventually I came up with something simple using two straw rubbers. It gave me the idea to create a drum (see next paragraph for the final prototype).
