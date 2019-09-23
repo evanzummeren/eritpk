@@ -1,7 +1,8 @@
 <h1 align="center">
-    <img alt="Lumen" title="Lumen" src="https://github.com/alxshelepenok/gatsby-starter-lumen/blob/gatsby-v2/.github/logo.png" width="140"> </br>
-    Lumen
+    ITP Blog
 </h1>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8507a030-85bb-472e-948e-dd41433a4f5d/deploy-status)](https://app.netlify.com/sites/eritpk/deploys)
 
 <h4 align="center">
   A minimal, lightweight and mobile-first starter for creating blogs uses <a href="https://github.com/gatsbyjs/gatsby" target="_blank">Gatsby</a>.
