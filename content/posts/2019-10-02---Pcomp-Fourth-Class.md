@@ -3,7 +3,7 @@ title: Pcomp [w4] - Learning skills
 date: "2019-10-02T20:07:42+00:00"
 template: "post"
 draft: false
-slug: "/posts/pcomp-third-class"
+slug: "/posts/pcomp-fourth-class"
 category: "Physical Computing"
 tags:
   - "Notes"
