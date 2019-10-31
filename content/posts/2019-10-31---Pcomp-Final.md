@@ -37,7 +37,7 @@ I've been thinking about a couple of ways on how to make them interactive:
 * Small powers/Big powers. One bounce is only a small gesture, but what if it results in something much bigger. Like turning the lights on and off?
 * Each bounce is one word. There's a video playing on one screen, every bounce makes it play one more word.
 
-I would like to explore some more options which involve time. 
+I would like to explore some more options which involve time..
 
 Here's an early sketch:
 
