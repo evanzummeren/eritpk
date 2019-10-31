@@ -1,14 +1,14 @@
- –---
-title: Pcomp final – IoT bouncing balls
-date: "2019-10-31T20:07:42+00:00"
+---
+title: Pcomp final - IoT bouncing balls
+date: "2019-10-16T20:07:42+00:00"
 template: "post"
 draft: false
-slug: "/posts/pcomp-final-idea"
+slug: "/posts/pcomp-final-wip"
 category: "Physical Computing"
 tags:
   - "Notes"
   - "Semester 1"
-description: "Creating interactive bouncing balls"
+description: "Working on some IoT bouncing balls"
 socialImage: "/media/image-3.jpg"
 ---
 As a child I loved bouncing balls. They are incredibly simple, but their behaviour is at the same time rather unpredictable. There's a wide variety of bouncing balls. Colored ones, rainbow colored ones, ones with flickering lights, with figures etc. I'll be trying to make my own interactive bouncing balls. The idea is simple, every bounce sends out a signal (communicating either through Wifi or Bluetooth). And that signal results in a bigger 'interaction'. 
@@ -37,7 +37,7 @@ I've been thinking about a couple of ways on how to make them interactive:
 * Small powers/Big powers. One bounce is only a small gesture, but what if it results in something much bigger. Like turning the lights on and off?
 * Each bounce is one word. There's a video playing on one screen, every bounce makes it play one more word.
 
-I would like to explore some more options which involve time. 
+I would like to explore some more options which involve time..
 
 Here's an early sketch:
 
