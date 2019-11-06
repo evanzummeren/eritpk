@@ -3,7 +3,7 @@ title: Visual Language [w2] - Ticket and logo's
 date: "2019-11-05T20:07:42+00:00"
 template: "post"
 draft: false
-slug: "/posts/visual-language-1"
+slug: "/posts/visual-language-2"
 category: "Visual Language"
 tags:
   - "Notes"
