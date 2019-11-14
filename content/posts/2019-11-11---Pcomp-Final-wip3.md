@@ -8,7 +8,7 @@ category: "Physical Computing"
 tags:
   - "Notes"
   - "Semester 1"
-description: "The second week of working on some IoT bouncing balls"
+description: "The third week of working on some IoT bouncing balls"
 socialImage: "/media/image-3.jpg"
 ---
 In this second week I've been working on making some prototypes. I ordered some bouncing balls. Made them hollow on the inside and see if I could attach them to each other again. I also worked on teaching myself the very basics of Fusion 360 [https://www.youtube.com/channel/UCo29kn3d9ziFUZGZ50VKvWA](this is a great channel) and learn how to 3d print. I made 
@@ -30,4 +30,8 @@ I have also been looking for ways to attach the two half balls with each othe
 
 This weeks prototype still has a shell made of PLA. It contains the entire dev board and the LIS3DH. The power supply is still through the USB. The purpose for this prototype is to test the data that comes from the LIS3DH and to play test.
 
+## Assignments
+![Stuff](/media/pcomp/final/001.png)
+
+[Bill of materials](https://docs.google.com/spreadsheets/d/1c_OfaC_WGtCPx2U4JoNNZVtHswnA67vDY4dKhqvmDu8/edit?usp=sharing)
 
