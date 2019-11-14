@@ -11,7 +11,7 @@ tags:
 description: "The second week of working on some IoT bouncing balls"
 socialImage: "/media/image-3.jpg"
 ---
-In this second week I've been working on making some prototypes. I ordered some bouncing balls. Made them hollow on the inside and see if I could attach them to each other again. I also worked on teaching myself the very basics of Fusion 360 [https://www.youtube.com/channel/UCo29kn3d9ziFUZGZ50VKvWA](this is a great channel) and learn how to 3d print. I made 
+In this second week I've been working on making some prototypes. I ordered some bouncing balls. Made them hollow on the inside and see if I could attach them to each other again. I also worked on teaching myself the very basics of Fusion 360 [this is a great channel](https://www.youtube.com/channel/UCo29kn3d9ziFUZGZ50VKvWA) and learn how to 3d print. I made 
 
 ## Types of interactions
 Here's some type of interaction I've been thinking about. Initially I was only thinking of passing one type of data to the computer (the bounce), but now I've been thinking it might also give more interesting effects if I add the height of the ball in comparison with the floor. Still have to figure out how to do this though, and how you would callibrate it.
