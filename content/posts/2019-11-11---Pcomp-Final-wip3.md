@@ -3,7 +3,7 @@ title: Pcomp final - IoT bouncing balls WIP3
 date: "2019-11-13T20:07:42+00:00"
 template: "post"
 draft: false
-slug: "/posts/pcomp-final-wip-2"
+slug: "/posts/pcomp-final-wip-3"
 category: "Physical Computing"
 tags:
   - "Notes"
