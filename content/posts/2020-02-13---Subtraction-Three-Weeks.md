@@ -51,5 +51,8 @@ If you want to make acrylic pieces that fit together you can use the offset tool
 Since the bit has troubles make sharp edges (it's often too big to reach that), it's smart to already incorporate this limitation in your design. To do so you can use the filet tool. Give it a bit more radius than the bit that you are about to use. For instance if you're using an 1/8 inch bit (.125), you'll use the radius (.65), and add a bit extra just in case (so .7)
 ![Circle drawing](/media/subtraction/vectorworks_circleedit.gif)
 
+## Some of the tools in the shop
+WIP
+
 
 
